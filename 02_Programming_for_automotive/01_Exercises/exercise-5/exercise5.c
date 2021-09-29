@@ -2,9 +2,9 @@
 
 // Exercise 5.1
 // Convert to binary and hexadecimal
-void convert_to_binary(int num)
+int * convert_to_binary(int num)
 {
-    int reminder[10], i;
+    static int reminder[10], i;
     for (i = 0; num > 0; i++)
     {
         reminder[i] = num % 2;
@@ -15,11 +15,11 @@ void convert_to_binary(int num)
     {
         printf("%d", reminder[i]);
     }
-    return;
+    return reminder;
 }
 
 int main(void)
 {
-    convert_to_binary(-13);
+    convert_to_binary(5);
     return 0;
 }
