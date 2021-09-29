@@ -11,3 +11,10 @@ Notice: The placeholder for A, B, C and D is one byte (8 bits).
 A = 45  => 32 0 8 4 0 1     =>      101101      => 45/16,   2r=13=D     => #2D
 B = -13 => 8 4 0 1          =>      -1101       => -13/16,  13=D        => #-D
 C = 0   => 0                =>      0           => 0                    => 0
+
+#### 5.2 Calculate A + B, A - B, C - A and B - A
+A + B   =>
+101101
+110011  (2's Complements, inverse + 1)
+-------
+100000
