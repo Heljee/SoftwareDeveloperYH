@@ -18,3 +18,9 @@ A + B   =>
 110011  (2's Complements, inverse + 1)
 -------
 100000
+
+A - B   =>
+101101
+110011  (2's Complements, inverse + 1)
+-------
+0
